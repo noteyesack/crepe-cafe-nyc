@@ -1,22 +1,14 @@
 import {getSeasonState,countdownParts} from './season.js';
+document.body.classList.add('js');
 const byId=id=>document.getElementById(id);
-let previousMode;
+let seasonMode;
 function updateSeason(){
  const now=new Date(),state=getSeasonState(now);
- if(previousMode!==state.active){
-  byId('season-title').textContent=state.active?'It’s here.':'See you this winter.';
-  byId('season-description').textContent=state.active?'Come check us out at Bryant Park Winter Village. A little winter magic is waiting.':'Our next season starts October 28. We’re counting down to crêpes and city lights.';
-  byId('season-foot').textContent=state.active?'Our season runs through January 2. See café hours below.':'Until October 28, midnight in New York.';
-  byId('countdown').hidden=state.active;
-  previousMode=state.active;
+ if(seasonMode!==state.active){
+  byId('season-message').textContent=state.active?'It’s here. Come visit us at Bryant Park Winter Village.':'Counting down to October 28 at Bryant Park.';
+  byId('countdown').hidden=state.active;seasonMode=state.active;
  }
- if(!state.active){
-  const remaining=countdownParts(state.remainingMs);
-  byId('days').textContent=remaining.days;
-  byId('hours-left').textContent=String(remaining.hours).padStart(2,'0');
-  byId('minutes').textContent=String(remaining.minutes).padStart(2,'0');
-  byId('seconds').textContent=String(remaining.seconds).padStart(2,'0');
- }
+ if(!state.active){const p=countdownParts(state.remainingMs);byId('days').textContent=p.days;byId('hours-left').textContent=String(p.hours).padStart(2,'0');byId('minutes').textContent=String(p.minutes).padStart(2,'0');byId('seconds').textContent=String(p.seconds).padStart(2,'0');}
  byId('copyright-year').textContent=now.getFullYear();
 }
 updateSeason();setInterval(updateSeason,1000);
@@ -27,17 +19,25 @@ nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeNav));
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){closeNav();toggle.focus();}});
 document.addEventListener('click',e=>{if(!e.target.closest('.site-header'))closeNav();});
 window.matchMedia('(min-width:761px)').addEventListener('change',closeNav);
-document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{
- const filter=button.dataset.filter;
- document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
- document.querySelectorAll('[data-category]').forEach(group=>group.hidden=filter!=='all'&&group.dataset.category!==filter);
- byId('filter-status').textContent=filter==='all'?'Showing all menu categories.':'Showing '+button.textContent.toLowerCase()+' menu.';
-}));
-document.querySelector('[data-filter="sweet"]').click();
-if('IntersectionObserver' in window){
- const reveal=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('entered');reveal.unobserve(entry.target);}}),{threshold:.08});
- document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.setProperty('--delay',(i%3)*65+'ms');reveal.observe(el);});
- const sections=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){nav.querySelectorAll('a').forEach(a=>{if(a.hash==='#'+entry.target.id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});}}),{rootMargin:'-20% 0px -55% 0px'});
- document.querySelectorAll('#menu,#winter,#hours,#visit').forEach(s=>sections.observe(s));
+const items=[...document.querySelectorAll('.menu-item')],buttons=[...document.querySelectorAll('[data-filter]')],search=byId('menu-search');
+const labels={all:'All favorites',sweet:'Sweet crêpes',savory:'Savory crêpes',waffles:'Bubble waffles',chocolate:'Hot chocolate',coffee:'Coffee & cider'};
+let category='sweet',limit=8;
+function renderMenu(){
+ const query=search.value.trim().toLocaleLowerCase();
+ const filtered=items.filter(item=>(category==='all'||item.dataset.category===category||(category==='coffee'&&item.dataset.category==='cider'))&&item.textContent.toLocaleLowerCase().includes(query));
+ items.forEach(item=>item.hidden=true);filtered.slice(0,limit).forEach(item=>item.hidden=false);
+ buttons.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.filter===category)));
+ byId('menu-heading').textContent=labels[category];
+ byId('menu-count').textContent=filtered.length+(filtered.length===1?' choice':' choices')+(query?' matching your search':'');
+ byId('show-more').hidden=filtered.length<=limit;
+ byId('show-more').textContent='See '+Math.min(8,filtered.length-limit)+' more '+(category==='all'?'favorites':labels[category].toLowerCase());
+ byId('no-results').hidden=filtered.length>0;byId('clear-search').hidden=!query;
 }
-
+buttons.forEach(button=>button.addEventListener('click',()=>{category=button.dataset.filter;limit=8;renderMenu();}));
+search.addEventListener('input',()=>{category='all';limit=8;renderMenu();});
+byId('clear-search').addEventListener('click',()=>{search.value='';limit=8;renderMenu();search.focus();});
+byId('reset-menu').addEventListener('click',()=>{category='all';search.value='';limit=8;renderMenu();search.focus();});
+byId('show-more').addEventListener('click',()=>{const oldLimit=limit;limit+=8;renderMenu();const visible=items.filter(i=>!i.hidden);const next=visible[oldLimit];if(next){next.setAttribute('tabindex','-1');next.focus({preventScroll:true});}});
+document.querySelectorAll('[data-menu-jump]').forEach(a=>a.addEventListener('click',()=>{category=a.dataset.menuJump;search.value='';limit=8;renderMenu();}));
+renderMenu();
+if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('entered');observer.unobserve(e.target);}}),{threshold:.06});document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.setProperty('--delay',(i%3)*60+'ms');observer.observe(el);});}
