@@ -1,0 +1,1 @@
+{"name":"crepe-cafe-bryant-park","private":true,"type":"module","scripts":{"test":"node --test season.test.mjs","dev":"node serve.mjs"}}

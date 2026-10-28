@@ -1,0 +1,5 @@
+.taste-skill/
+browser-check.mjs
+node_modules/
+*.tar.gz
+*.zip

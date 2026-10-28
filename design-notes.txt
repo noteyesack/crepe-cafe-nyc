@@ -1,0 +1,11 @@
+Subject inventory: Crepe Cafe, Bryant Park, Midtown Manhattan, Winter Village, October 28 opening, January 2 closing, New York time, handheld crepes, city lights, sweet and savory, Fifth and Sixth Avenues.
+Audience: people planning a park visit. Action: explore menu, then directions.
+Argument: Hero offers a warm seasonal stop supported by supplied dates and live season status. Menu shows clearly marked sample dishes. Visit gives park address and directions. Hours explicitly pending.
+Idea: On this page, Crepe Cafe's October-to-January stay in Bryant Park becomes a permanent winter window beside a scrolling cafe menu.
+Direction: split-stage, seed 1360174557. Work Sans and bottle green/gold. Warm white reading text and printed-menu panel improve long-read comfort. Contact redrawn to address-display-rows because no email was supplied.
+Copy: Crêpes & city lights. A warm crêpe, a winter stroll, a little New York magic. October 28–January 2. It's here. Come check us out at Bryant Park Winter Village. The menu. Find us in the park. Plan your visit. See you at the park.
+Sample menu: strawberry/chocolate, banana/hazelnut, lemon/sugar, cinnamon sugar, mushroom/spinach, ham/cheese, chicken/mozzarella, tomato/pesto, hot chocolate, hot cider, coffee, tea. All pending owner confirmation; prices omitted until supplied. Hours coming soon per user.
+Imagery: four built-in imagegen assets copied into dist/assets. AI-generated and illustrative disclosure in footer and alt text. No found imagery used.
+Prompts: Hero: editorial portrait of a handheld strawberry banana chocolate crepe in kraft sleeve, winter market evergreen and bokeh, no branding. Sweet: square editorial folded crepes with strawberries banana chocolate on green table. Savory: square mushroom spinach cheese crepe on green table. Drinks: square hot chocolate with marshmallows on green table. No logos, no watermarks, natural side light.
+Research: https://bryantpark.org/assets/uploads/documents/general/holiday-shops-directory.pdf verifies cafe's park presence. No stale booth number used. User supplied annual dates govern cafe season. No daily hours inferred.
+

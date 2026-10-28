@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Crepe Cafe | Bryant Park Winter Village, NYC</title>
+<meta name="description" content="A warm crêpe and a little New York magic. Visit Crepe Cafe at Bryant Park Winter Village, October 28–January 2. Explore the menu and plan your visit.">
+<meta name="theme-color" content="#133621">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<a class="brand" href="#home" aria-label="Crepe Cafe home">crêpe café<span>Bryant Park, NYC</span></a>
+<button class="nav-toggle" aria-expanded="false" aria-controls="navigation">Explore <span aria-hidden="true">+</span></button>
+<nav id="navigation" aria-label="Main navigation">
+<a href="#menu">Menu</a><a href="#winter">Winter Village</a><a href="#hours">Hours</a><a href="#visit">Visit us <span aria-hidden="true">↗</span></a>
+</nav>
+</header>
+<main id="main" class="site-layout">
+<aside class="winter-window" aria-label="An illustrated taste of winter">
+<img src="assets/hero.png" width="1024" height="1536" alt="Illustrative strawberry, banana and chocolate crêpe at a warmly lit winter market" fetchpriority="high">
+<div class="window-caption"><span>A little warmth.<br>A lot of New York.</span><span class="window-location">Bryant Park<br>Winter Village</span></div>
+</aside>
+<div class="reading-column">
+<section class="hero section-pad" id="home">
+<h1 class="reveal">Crêpes &<br>city lights.</h1>
+<p class="season-dates reveal">October 28 — January 2</p>
+<p class="hero-copy reveal">A warm crêpe, a winter stroll, a little New York magic. Find us at Bryant Park Winter Village.</p>
+<div class="season-panel reveal" id="winter">
+<div id="season-copy" role="status" aria-live="polite"><h2 id="season-title">Winter at Bryant Park.</h2><p id="season-description">Join us October 28 through January 2.</p></div>
+<div class="countdown" id="countdown" hidden aria-label="Countdown to the next season">
+<div><strong id="days">0</strong><span>days</span></div><div><strong id="hours-left">00</strong><span>hours</span></div><div><strong id="minutes">00</strong><span>minutes</span></div><div><strong id="seconds">00</strong><span>seconds</span></div>
+</div>
+<p class="season-foot" id="season-foot">Our annual winter season, on New York time.</p>
+</div>
+<a class="button reveal" href="#menu">Explore the menu <span aria-hidden="true">↘</span></a>
+</section>
+<section class="menu-section section-pad" id="menu">
+<h2 class="section-title reveal">The menu.</h2>
+<p class="section-intro reveal">Sweet, savory, and something<br>to warm your hands.</p>
+<p class="menu-note reveal">A taste of what’s to come. The items below are a sample menu; our current selections and prices will be added soon.</p>
+<div class="menu-filters reveal" role="group" aria-label="Filter menu">
+<button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="sweet" aria-pressed="false">Sweet</button><button type="button" data-filter="savory" aria-pressed="false">Savory</button><button type="button" data-filter="drinks" aria-pressed="false">Drinks</button>
+</div>
+<p class="sr-only" id="filter-status" role="status"></p>
+<div class="menu-group" data-category="sweet">
+<div class="menu-group-heading reveal"><h3>Something sweet.</h3><span>Crêpes</span></div>
+<img class="menu-photo reveal" src="assets/sweet.png" width="1254" height="1254" loading="lazy" alt="Illustrative folded crêpes with strawberries, banana and chocolate">
+<dl class="menu-items">
+<div class="reveal"><dt>Strawberry & chocolate</dt><dd>Strawberries with chocolate hazelnut spread.</dd></div>
+<div class="reveal"><dt>Banana & hazelnut</dt><dd>Sliced banana and chocolate hazelnut spread.</dd></div>
+<div class="reveal"><dt>Lemon & sugar</dt><dd>A squeeze of lemon and a sprinkle of sugar.</dd></div>
+<div class="reveal"><dt>Cinnamon sugar</dt><dd>A warm, simple cinnamon-sugar classic.</dd></div>
+</dl>
+</div>
+<div class="menu-group" data-category="savory">
+<div class="menu-group-heading reveal"><h3>Something savory.</h3><span>Crêpes</span></div>
+<img class="menu-photo reveal" src="assets/savory.png" width="1254" height="1254" loading="lazy" alt="Illustrative savory crêpe with mushrooms, spinach and cheese">
+<dl class="menu-items">
+<div class="reveal"><dt>Mushroom & spinach</dt><dd>Mushrooms, spinach and melted cheese.</dd></div>
+<div class="reveal"><dt>Ham & cheese</dt><dd>Savory ham with a generous fold of cheese.</dd></div>
+<div class="reveal"><dt>Chicken & mozzarella</dt><dd>Chicken, mozzarella and a savory sauce.</dd></div>
+<div class="reveal"><dt>Tomato & pesto</dt><dd>Tomato, mozzarella and basil pesto.</dd></div>
+</dl>
+</div>
+<div class="menu-group" data-category="drinks">
+<div class="menu-group-heading reveal"><h3>To warm up.</h3><span>Drinks</span></div>
+<img class="menu-photo reveal" src="assets/drinks.png" width="1254" height="1254" loading="lazy" alt="Illustrative mug of hot chocolate with marshmallows">
+<dl class="menu-items">
+<div class="reveal"><dt>Hot chocolate</dt><dd>A cozy chocolate break from the winter air.</dd></div>
+<div class="reveal"><dt>Hot apple cider</dt><dd>Warm apple goodness in a cup.</dd></div>
+<div class="reveal"><dt>Coffee</dt><dd>A little pick-me-up for your park stroll.</dd></div>
+<div class="reveal"><dt>Tea</dt><dd>A warm cup, a slower moment.</dd></div>
+</dl>
+</div>
+<p class="allergen-note reveal">Food allergies? Please speak with our team before ordering. Ingredients and availability will be confirmed with the final menu.</p>
+</section>
+<section class="visit-section section-pad" id="visit">
+<h2 class="section-title reveal">Find us<br>in the park.</h2>
+<p class="visit-place reveal">Bryant Park<br>Winter Village</p>
+<address class="reveal">Between Fifth & Sixth Avenues<br>40th–42nd Streets<br>New York, NY</address>
+<p class="reveal">Make us part of your winter wander. Stop by for a crêpe while you explore the Holiday Shops.</p>
+<a class="button reveal" href="https://www.google.com/maps/dir/?api=1&destination=Bryant+Park+New+York+NY" target="_blank" rel="noopener noreferrer">Get directions <span aria-hidden="true">↗</span></a>
+<a class="text-link reveal" href="https://bryantpark.org/activities/bank-of-america-winter-village-at-bryant-park" target="_blank" rel="noopener noreferrer">Explore Winter Village</a>
+</section>
+<section class="hours-section section-pad" id="hours">
+<h2 class="section-title reveal">Plan your visit.</h2>
+<p class="section-intro reveal">The season is short.<br>Make it a sweet one.</p>
+<dl class="hours-list reveal">
+<div><dt>Our season</dt><dd>October 28 – January 2</dd></div>
+<div><dt>Café hours</dt><dd>Coming soon</dd></div>
+</dl>
+<p class="reveal">We’re getting the daily schedule ready. Check back here for weekday, weekend and holiday hours before you visit.</p>
+<p class="hours-note reveal">The seasonal welcome above marks our winter season. It does not indicate that the café is open at this moment.</p>
+</section>
+<footer class="section-pad">
+<h2 class="reveal">See you at the park.</h2>
+<a href="#home" class="footer-brand reveal">crêpe café</a>
+<p class="reveal">A little warmth in the heart of Midtown.</p>
+<div class="footer-links"><a href="#menu">Menu</a><a href="#hours">Hours</a><a href="#visit">Directions</a></div>
+<p class="credits">Imagery is AI-generated and illustrative. Sample menu awaiting confirmation.</p>
+<p class="copyright">© <span id="copyright-year">2026</span> Crepe Cafe · Bryant Park, NYC</p>
+</footer>
+</div>
+</main>
+</body></html>
