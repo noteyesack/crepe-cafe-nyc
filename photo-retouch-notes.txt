@@ -1,0 +1,9 @@
+Kiosk photo edit: built-in image generation tool, 2026-10-28.
+Source: user-supplied BP2025-2026kioskFront.jpg. Original unchanged.
+Website asset: dist/assets/kiosk-front-natural.png
+The portrait is displayed with its full frame and gently rounded corners.
+Prompt: Use case: lighting-weather. Edit target: the attached ORIGINAL real photograph of Crepe Cafe kiosk S26 at night. Make ONLY very subtle photographic exposure corrections. The user rejected the previous edit as too AI generated and wants organic, honest, real photography. Preserve the original perspective, portrait composition, exact geometry, menu lettering, signage, equipment, counter clutter, real uneven surfaces, fallen leaves, building windows, grain, colors, and imperfections. Gently lift the darkest shadows and slightly reduce the hazy glare around the fluorescent lamps, leaving the lamps visibly bright and natural. Keep the original mixed fluorescent and tungsten lighting; do not turn the whole image amber. Do not reconstruct unreadable details, replace signage, smooth textures, straighten architecture into a render, add decorations, remove objects, add glow, sharpen excessively, oversaturate, or stylize. No HDR or cinematic grading. This should look like the same original phone photograph with a restrained exposure adjustment, NOT a newly generated storefront. Keep entire original portrait frame.
+
+Location: Google map pin uses the viewpoint coordinates in the owner's supplied Street View link. It is not a verified Google business listing.
+Map, direct pin and walking directions use 40.753352,-73.9838682. Original Street View link retained. Kiosk S26 is cited to the official 2026 Winter Village directory.
+Headline: Your winter stop at Bryant Park.

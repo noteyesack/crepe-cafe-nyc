@@ -1,0 +1,10 @@
+{
+  "latitude": 40.753352,
+  "longitude": -73.9838682,
+  "source": "Owner-supplied Google Maps Street View viewpoint",
+  "streetViewUrl": "https://www.google.com/maps/place/Bryant+Park/@40.753352,-73.9838682,22a,75y,262.13h,59.39t/data=!3m7!1e1!3m5!1sW_Pfr_KVu6i_D2OAmf9u2g!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D30.614439752495983%26panoid%3DW_Pfr_KVu6i_D2OAmf9u2g%26yaw%3D262.12687775409836!7i13312!8i6656!4m6!3m5!1s0x89c259aae7a0b1bd:0xb49cafb82537f1a7!8m2!3d40.7535367!4d-73.9829529!16zL20vMDN2Z2Rf?entry=ttu",
+  "kiosk": "S26",
+  "directoryUrl": "https://bryantpark.org/downloads/holiday-shops-directory.pdf",
+  "verifiedDate": "2026-10-28",
+  "note": "Pin uses the owner-shared Street View position, not the generic Bryant Park place centroid."
+}
