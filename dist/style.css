@@ -20,5 +20,18 @@ h1,.footer-brand{font-size:var(--type-display)}
 .season-dates{font-size:var(--type-lead)}
 @media(max-width:760px){.hero-copy{order:2}.season-dates{order:1;font-size:var(--type-body)}.hero .button{order:3;margin-top:24px}.season-panel{order:4;margin-top:48px;margin-bottom:0}.window-caption>span:first-child{font-size:var(--type-lead)}.window-location{display:none}}
 @media(max-width:760px){.hero .button{font-size:var(--type-lead);gap:18px;padding:14px 20px}.season-panel{margin-top:32px}}
+:root{--bg:#162579;--surface:#23358d;--ink:#f7f7f2;--muted:#d6dbee;--accent:#eed46e;--paper:#f6f6f1;--paper-ink:#172561;--paper-muted:#454c68;--soft:#e8eaf2}
+h1,h2,h3,.footer-brand{font-family:'DM Serif Display',Georgia,serif;font-weight:400;letter-spacing:-.035em}
+.brand{display:flex;align-items:center;gap:14px;letter-spacing:0}.brand img{width:70px;height:70px;object-fit:contain}.brand .brand-name{font-family:'DM Serif Display',Georgia,serif;font-size:24px;color:var(--accent);margin:0}.brand-name small{display:block;font:14px 'Work Sans',Arial,sans-serif;color:var(--ink);margin-top:5px}
+.winter-window>img{object-position:48% center}.window-caption{background:var(--bg)}.window-caption>span:first-child{color:var(--accent)}
+.menu-group-heading{margin-bottom:8px}.menu-group-heading h3{font-size:32px}.group-description{font-size:14px;color:var(--paper-muted);margin-bottom:22px}.menu-items dt{display:flex;justify-content:space-between;gap:20px;align-items:baseline}.menu-items dt>span:first-child{max-width:75%}.menu-price{white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:400}.menu-items dd{max-width:44ch}.menu-items>div{margin-top:26px}
+.more-menu{margin-top:26px}.more-menu summary,.extras-menu summary{cursor:pointer;font-size:17px;font-weight:500;padding:14px 18px;background:var(--soft);list-style-position:inside;min-height:48px}.more-menu summary:hover,.extras-menu summary:hover{background:var(--bg);color:var(--ink)}summary:focus-visible{outline:3px solid var(--bg);outline-offset:4px}.more-menu[open] summary{background:var(--bg);color:var(--ink)}.more-menu[open] .menu-items{padding:0 12px}
+.extras-menu{margin-top:56px}.extras-menu h3{font-size:24px;margin:30px 0 16px}.extras-menu p{margin-top:20px;font-size:17px}.extras-list{font-size:17px}.extras-list>div{margin-top:18px}.extras-list dt{font-weight:500}.extras-list dd{margin:5px 0 0;color:var(--paper-muted)}.visit-logo{width:150px;height:150px;object-fit:contain;margin-top:30px}.visit-place{margin-top:20px}.credits a{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:1050px){.site-header{gap:16px}nav{gap:18px}.brand img{width:58px;height:58px}.brand .brand-name{font-size:24px}.brand-name small{font-size:14px}}
+@media(max-width:760px){.brand{gap:10px}.brand img{width:54px;height:54px}.brand .brand-name{font-size:24px}.brand-name small{font-size:12px}.site-header{padding:0 18px}.winter-window>img{object-position:center 35%}.menu-group-heading h3{font-size:28px}.menu-items dt{gap:12px}.menu-items dt>span:first-child{max-width:72%}.hours-list>div{display:block}.hours-list dd{text-align:left;margin-top:6px}.section-intro br{display:none}}
+.menu-group>.menu-photo,.hours-photo{margin-bottom:26px}
+:root{--paper:#f2f3f5;--ink:#f2f3f5}
+details:not([open])>:not(summary){display:none}
+.brand-name small{font-family:'DM Serif Display',Georgia,serif;font-size:14px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 

@@ -33,6 +33,7 @@ document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListen
  document.querySelectorAll('[data-category]').forEach(group=>group.hidden=filter!=='all'&&group.dataset.category!==filter);
  byId('filter-status').textContent=filter==='all'?'Showing all menu categories.':'Showing '+button.textContent.toLowerCase()+' menu.';
 }));
+document.querySelector('[data-filter="sweet"]').click();
 if('IntersectionObserver' in window){
  const reveal=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('entered');reveal.unobserve(entry.target);}}),{threshold:.08});
  document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.setProperty('--delay',(i%3)*65+'ms');reveal.observe(el);});

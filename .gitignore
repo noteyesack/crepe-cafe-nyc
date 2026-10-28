@@ -1,5 +1,6 @@
 .taste-skill/
 browser-check.mjs
+update-brand.mjs
 node_modules/
 *.tar.gz
 *.zip

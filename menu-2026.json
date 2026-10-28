@@ -1,0 +1,329 @@
+{
+  "sweet": [
+    [
+      "French Kiss",
+      18.95,
+      "Nutella, fresh bananas and fresh strawberries."
+    ],
+    [
+      "Taste of Dubai",
+      23.95,
+      "Golden toasted kataifi, pistachio crème, fresh strawberries and Belgian milk chocolate."
+    ],
+    [
+      "S’mores",
+      18.95,
+      "Belgian milk chocolate, crushed honey graham cookie and melted mini marshmallows."
+    ],
+    [
+      "Oreo Crushed",
+      19.95,
+      "Crushed Oreo, fresh strawberries and Belgian white chocolate."
+    ],
+    [
+      "Cheesecake Love",
+      21.95,
+      "A slice of NY cheesecake, crushed Oreo, whipped cream and caramel."
+    ],
+    [
+      "Ooh La La",
+      19.95,
+      "Fresh strawberries, sliced almonds and Belgian dark chocolate."
+    ],
+    [
+      "Campfire Banana",
+      20.95,
+      "Melted mini marshmallows, fresh bananas, Nutella and peanut butter."
+    ],
+    [
+      "Red White Bleu",
+      19.95,
+      "Fresh strawberries, Belgian white chocolate and fresh blueberries."
+    ],
+    [
+      "Monkey Fever",
+      18.95,
+      "Fresh bananas, crushed walnuts and Nutella."
+    ],
+    [
+      "Monster Cookie",
+      18.95,
+      "Chocolate chip cookie, melted mini marshmallows, caramel and butter."
+    ],
+    [
+      "Peaches & Cream",
+      17.95,
+      "Sweet peaches, whipped cream and cinnamon brown sugar."
+    ],
+    [
+      "Berry Swirl",
+      17.95,
+      "Fresh strawberries, blueberry jam and whipped cream."
+    ],
+    [
+      "Brooklyn Bridge",
+      18.95,
+      "Fresh banana, peanut butter, butter and condensed milk."
+    ],
+    [
+      "Biscoff Banofee",
+      17.95,
+      "Crushed Lotus Biscoff cookie, caramel and fresh bananas."
+    ],
+    [
+      "Spiced Apple",
+      17.95,
+      "Sliced apples, cinnamon brown sugar, crushed walnuts and butter."
+    ],
+    [
+      "High Line",
+      18.95,
+      "Fresh blueberries, fresh banana and strawberry jam."
+    ]
+  ],
+  "savory": [
+    [
+      "Bryant Park",
+      23.95,
+      "Smashed avocado, organic baby spinach, fresh strawberries, sliced almonds and organic balsamic glaze."
+    ],
+    [
+      "Little Paris",
+      19.95,
+      "Honey ham, Dijon mustard and melted Gruyère."
+    ],
+    [
+      "Chelsea",
+      25.95,
+      "White meat chicken, mozzarella, organic baby spinach, fresh tomato and basil pesto."
+    ],
+    [
+      "Mac-Attack",
+      26.95,
+      "Shell pasta in cheddar sauce, melted mozzarella, Parmesan and crispy bacon."
+    ],
+    [
+      "City Hall",
+      20.95,
+      "Organic baby spinach, fresh tomato, mozzarella and basil pesto."
+    ],
+    [
+      "Manhattan",
+      16.95,
+      "Honey ham and melted mozzarella."
+    ],
+    [
+      "Spanish Harlem",
+      23.95,
+      "White meat chicken, fresh tomato, mozzarella and smashed avocado."
+    ],
+    [
+      "Metropolitan",
+      23.95,
+      "Mozzarella, fresh tomato, a fried egg and crispy bacon."
+    ],
+    [
+      "Madison",
+      21.95,
+      "Organic baby spinach, Gruyère, a fried egg, truffle salt and oil."
+    ],
+    [
+      "Soho",
+      20.95,
+      "Crispy bacon, mozzarella and Parmesan."
+    ],
+    [
+      "Nolita",
+      27.95,
+      "White meat chicken, mozzarella, organic baby spinach, crispy bacon and country ranch."
+    ],
+    [
+      "Central Park",
+      21.95,
+      "Gruyère, mozzarella and Parmesan with garlic salt and black pepper."
+    ],
+    [
+      "Baconator",
+      23.95,
+      "Sweet Nutella, mozzarella, fresh banana and crispy bacon."
+    ],
+    [
+      "Paradox",
+      22.95,
+      "Sweet Nutella, fresh strawberries, honey ham and mozzarella."
+    ],
+    [
+      "Charcuterie",
+      23.95,
+      "Honey ham, lightly melted Gruyère, fresh strawberries and Ritz crackers."
+    ],
+    [
+      "Elvis Dream",
+      22.95,
+      "Cinnamon brown sugar, peanut butter, fresh bananas and crispy bacon."
+    ]
+  ],
+  "waffles": [
+    [
+      "The Bomb",
+      21.95,
+      "Whipped cream, ice cream, Nutella, fresh strawberries and banana."
+    ],
+    [
+      "Mount Nutella",
+      19.95,
+      "Nutella, whipped cream and Ferrero Rocher."
+    ],
+    [
+      "Strawberry Bliss",
+      17.95,
+      "Fresh strawberries, whipped cream and blueberry jam."
+    ],
+    [
+      "Winter Camp",
+      21.95,
+      "Bear honey graham cookies, chocolate curls, marshmallows and whipped cream."
+    ],
+    [
+      "Choco Banana",
+      17.95,
+      "Nutella, banana and whipped cream."
+    ],
+    [
+      "Creamy Oreo",
+      17.95,
+      "Oreo, condensed milk and whipped cream."
+    ],
+    [
+      "Berry Cookie",
+      17.95,
+      "Chocolate chip cookie, whipped cream and strawberry jam."
+    ],
+    [
+      "Biscoff Whip",
+      17.95,
+      "Biscoff cookie, whipped cream and caramel."
+    ]
+  ],
+  "chocolate": [
+    [
+      "Nutella",
+      14.5,
+      "Hazelnut hot chocolate, whipped cream, chocolate curl, Ferrero Rocher and Nutella drizzle."
+    ],
+    [
+      "S’mores",
+      14.5,
+      "Hershey’s hot chocolate, whipped cream, toasted marshmallow, bear honey graham cracker and chocolate curl."
+    ],
+    [
+      "Dubai",
+      16,
+      "Pistachio hot chocolate, whipped cream, golden toasted kataifi and pistachio crème."
+    ],
+    [
+      "Dulce Biscoff",
+      14.5,
+      "Dulce de leche hot chocolate, whipped cream, Lotus Biscoff cookie and caramel drizzle."
+    ],
+    [
+      "Minty",
+      14.5,
+      "Peppermint hot chocolate, whipped cream, peppermint candy cane and festive sprinkles."
+    ],
+    [
+      "Santa’s Cookie",
+      14.5,
+      "Cookie dough hot chocolate, whipped cream, chocolate chip cookies and chocolate curl."
+    ],
+    [
+      "Oreo",
+      14.5,
+      "Hershey’s hot chocolate, whipped cream, chocolate curl and an Oreo cookie."
+    ],
+    [
+      "Gingerbread",
+      14.5,
+      "Gingerbread hot chocolate, whipped cream, crushed peppermint and a gingersnap cookie."
+    ],
+    [
+      "Tiramisu",
+      14.5,
+      "Tiramisu-inspired hot chocolate with Colombian coffee, whipped cream, cocoa powder and a ladyfinger cookie."
+    ],
+    [
+      "Black Forest",
+      14.5,
+      "Cherry hot chocolate, whipped cream, maraschino cherry and chocolate curl."
+    ],
+    [
+      "Vanilla Royale",
+      14.5,
+      "French vanilla hot chocolate, mini marshmallows, whipped cream, Hershey’s syrup and cocoa powder."
+    ],
+    [
+      "House Classic",
+      8,
+      "Simple house hot chocolate. Toppings and flavor add-ons available."
+    ],
+    [
+      "Hot Chocolate Float",
+      16,
+      "House hot chocolate, French vanilla ice cream, whipped cream, mini marshmallows and chocolate curl."
+    ]
+  ],
+  "coffee": [
+    [
+      "Colombian Coffee",
+      4.5,
+      "Fresh-drip 100% Colombian coffee, served hot."
+    ],
+    [
+      "Caramel Coffee Float",
+      11,
+      "Hot Colombian coffee, French vanilla ice cream, whipped cream and caramel."
+    ],
+    [
+      "Café au Lait",
+      5.5,
+      "Hot Colombian coffee with sweet condensed milk and hot whole milk."
+    ],
+    [
+      "Spanish Café au Lait",
+      7,
+      "Hot Colombian coffee with sweet condensed milk and hot whole milk."
+    ],
+    [
+      "Peppermint Mocha Café au Lait",
+      8.5,
+      "Hot Colombian coffee with peppermint hot chocolate and hot whole milk."
+    ]
+  ],
+  "cider": [
+    [
+      "Original Apple Cider",
+      7,
+      "Served hot or cold."
+    ],
+    [
+      "Spiced Hot Apple Cider",
+      9,
+      "A warm, spiced apple cider."
+    ],
+    [
+      "Caramel & Cream",
+      10,
+      "Original hot or cold apple cider with whipped cream and caramel."
+    ],
+    [
+      "Spiced Caramel & Cream",
+      12,
+      "Spiced hot apple cider with whipped cream and caramel."
+    ],
+    [
+      "Apple Cider Float",
+      14.5,
+      "Cold original cider, French vanilla ice cream, whipped cream, caramel and a maraschino cherry."
+    ]
+  ]
+}

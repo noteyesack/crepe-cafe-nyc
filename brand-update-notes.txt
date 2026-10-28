@@ -1,0 +1,18 @@
+CREPE CAFE — 2026 BRAND AND MENU UPDATE
+This update replaces the original sample-menu draft.
+Brand: the supplied royal-blue and gold identity, original transparent gold logo, original kiosk photograph, and DM Serif Display headings with Work Sans body text. The original split-stage layout remains (seed 1360174557); no new layout draw. Brand colors override the original green palette.
+
+Content: all 63 menu items transcribed from the supplied 2026 PDF: 16 sweet crepes, 16 savory/sweet-savory crepes, 8 bubble waffles, 13 hot chocolates, 5 coffees and 5 ciders. The first listed price is used where the PDF gives two prices, as confirmed by the owner. Custom toppings and published surcharges are included. Production/layout instructions from the PDF were not treated as instructions for the website.
+The older 2025–26 board prices are not used or linked on the site.
+Menu defaults to Sweet; All, Savory, Waffles and Drinks work. Longer menus expand in place. Without JavaScript all categories remain readable.
+Cafe hours remain awaiting owner input.
+
+Images: the supplied kiosk photo and gold logo are unchanged. Two prior AI-generated serving illustrations remain: sweet crepes and hot chocolate, disclosed in the footer. No new generated images or external stock imagery.
+Image files in the website download: assets/kiosk.png, assets/gold-logo.png, assets/sweet.png, assets/drinks.png.
+Original illustration prompts: sweet crepes with strawberries, banana and chocolate on pale ceramic with a deep-green tabletop; white mug of hot chocolate with marshmallows on a deep-green table, warm side light. Both generated with the built-in image tool in the original build.
+
+Validation: six date-boundary tests passed. Browser verification checked every rendered item name and price against the 63-entry transcription, five category filters, expandable menus, custom toppings, mobile navigation, both seasonal states, overflow and console errors.
+The recurring October 28–January 2 season still uses New York time.
+Visual inspection: desktop, tablet and phone reviewed. Original brand photo is lower resolution and crops tightly on tablet. No video is used; a subtle photo movement respects reduced-motion preferences.
+Design review: design 8, usability 8, creativity 7, content 8 -> 7.8 overall. Remaining limits: daily hours are missing; two food images are illustrative.
+

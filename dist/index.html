@@ -4,32 +4,32 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Crepe Cafe | Bryant Park Winter Village, NYC</title>
 <meta name="description" content="A warm crêpe and a little New York magic. Visit Crepe Cafe at Bryant Park Winter Village, October 28–January 2. Explore the menu and plan your visit.">
-<meta name="theme-color" content="#133621">
+<meta name="theme-color" content="#162579">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script type="module" src="app.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
-<a class="brand" href="#home" aria-label="Crepe Cafe home">crêpe café<span>Bryant Park, NYC</span></a>
+<a class="brand" href="#home" aria-label="Crepe Cafe home"><img src="assets/gold-logo.png" width="1500" height="1500" alt=""><span class="brand-name">Crêpe Café<small>Bryant Park, NYC</small></span></a>
 <button class="nav-toggle" aria-expanded="false" aria-controls="navigation">Explore <span aria-hidden="true">+</span></button>
 <nav id="navigation" aria-label="Main navigation">
 <a href="#menu">Menu</a><a href="#winter">Winter Village</a><a href="#hours">Hours</a><a href="#visit">Visit us <span aria-hidden="true">↗</span></a>
 </nav>
 </header>
 <main id="main" class="site-layout">
-<aside class="winter-window" aria-label="An illustrated taste of winter">
-<img src="assets/hero.png" width="1024" height="1536" alt="Illustrative strawberry, banana and chocolate crêpe at a warmly lit winter market" fetchpriority="high">
-<div class="window-caption"><span>A little warmth.<br>A lot of New York.</span><span class="window-location">Bryant Park<br>Winter Village</span></div>
+<aside class="winter-window" aria-label="Our Bryant Park kiosk">
+<img src="assets/kiosk.png" width="741" height="647" alt="Crepe Cafe’s green-framed Bryant Park kiosk with royal-blue and gold signage" fetchpriority="high">
+<div class="window-caption"><span>Look for the blue.<br>Stay for a crêpe.</span><span class="window-location">Bryant Park<br>Winter Village</span></div>
 </aside>
 <div class="reading-column">
 <section class="hero section-pad" id="home">
 <h1 class="reveal">Crêpes &<br>city lights.</h1>
 <p class="season-dates reveal">October 28 — January 2</p>
-<p class="hero-copy reveal">A warm crêpe, a winter stroll, a little New York magic. Find us at Bryant Park Winter Village.</p>
+<p class="hero-copy reveal">Sweet and savory crêpes, bubble waffles and holiday drinks. Find our blue-and-gold kiosk at Bryant Park Winter Village.</p>
 <div class="season-panel reveal" id="winter">
 <div id="season-copy" role="status" aria-live="polite"><h2 id="season-title">Winter at Bryant Park.</h2><p id="season-description">Join us October 28 through January 2.</p></div>
 <div class="countdown" id="countdown" hidden aria-label="Countdown to the next season">
@@ -40,54 +40,125 @@
 <a class="button reveal" href="#menu">Explore the menu <span aria-hidden="true">↘</span></a>
 </section>
 <section class="menu-section section-pad" id="menu">
-<h2 class="section-title reveal">The menu.</h2>
-<p class="section-intro reveal">Sweet, savory, and something<br>to warm your hands.</p>
-<p class="menu-note reveal">A taste of what’s to come. The items below are a sample menu; our current selections and prices will be added soon.</p>
+<h2 class="section-title reveal">The 2026 menu.</h2>
+<p class="section-intro reveal">Sweet folds. Savory favorites.<br>Winter treats.</p>
+<p class="menu-note reveal">Crêpes made warm for a stroll through the market, bubble waffles piled high, and something cozy to sip.</p>
 <div class="menu-filters reveal" role="group" aria-label="Filter menu">
-<button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="sweet" aria-pressed="false">Sweet</button><button type="button" data-filter="savory" aria-pressed="false">Savory</button><button type="button" data-filter="drinks" aria-pressed="false">Drinks</button>
-</div>
-<p class="sr-only" id="filter-status" role="status"></p>
+<button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="sweet" aria-pressed="false">Sweet</button><button type="button" data-filter="savory" aria-pressed="false">Savory</button><button type="button" data-filter="waffles" aria-pressed="false">Waffles</button><button type="button" data-filter="drinks" aria-pressed="false">Drinks</button>
+</div><p class="sr-only" id="filter-status" role="status"></p>
 <div class="menu-group" data-category="sweet">
-<div class="menu-group-heading reveal"><h3>Something sweet.</h3><span>Crêpes</span></div>
-<img class="menu-photo reveal" src="assets/sweet.png" width="1254" height="1254" loading="lazy" alt="Illustrative folded crêpes with strawberries, banana and chocolate">
-<dl class="menu-items">
-<div class="reveal"><dt>Strawberry & chocolate</dt><dd>Strawberries with chocolate hazelnut spread.</dd></div>
-<div class="reveal"><dt>Banana & hazelnut</dt><dd>Sliced banana and chocolate hazelnut spread.</dd></div>
-<div class="reveal"><dt>Lemon & sugar</dt><dd>A squeeze of lemon and a sprinkle of sugar.</dd></div>
-<div class="reveal"><dt>Cinnamon sugar</dt><dd>A warm, simple cinnamon-sugar classic.</dd></div>
-</dl>
+<img class="menu-photo reveal" src="assets/sweet.png" width="1254" height="1254" loading="lazy" alt="Illustrative strawberry, banana and chocolate crêpes">
+<div class="menu-group-heading reveal"><h3>Sweet crêpes</h3></div><p class="group-description">Signature selections</p>
+<dl class="menu-items"><div class="reveal"><dt><span>French Kiss</span><span class="menu-price">$18.95</span></dt><dd>Nutella, fresh bananas and fresh strawberries.</dd></div>
+<div class="reveal"><dt><span>Taste of Dubai</span><span class="menu-price">$23.95</span></dt><dd>Golden toasted kataifi, pistachio crème, fresh strawberries and Belgian milk chocolate.</dd></div>
+<div class="reveal"><dt><span>S’mores</span><span class="menu-price">$18.95</span></dt><dd>Belgian milk chocolate, crushed honey graham cookie and melted mini marshmallows.</dd></div>
+<div class="reveal"><dt><span>Oreo Crushed</span><span class="menu-price">$19.95</span></dt><dd>Crushed Oreo, fresh strawberries and Belgian white chocolate.</dd></div>
+<div class="reveal"><dt><span>Cheesecake Love</span><span class="menu-price">$21.95</span></dt><dd>A slice of NY cheesecake, crushed Oreo, whipped cream and caramel.</dd></div>
+<div class="reveal"><dt><span>Ooh La La</span><span class="menu-price">$19.95</span></dt><dd>Fresh strawberries, sliced almonds and Belgian dark chocolate.</dd></div></dl>
+<details class="more-menu"><summary>See all sweet crêpes (16)</summary><dl class="menu-items"><div class="reveal"><dt><span>Campfire Banana</span><span class="menu-price">$20.95</span></dt><dd>Melted mini marshmallows, fresh bananas, Nutella and peanut butter.</dd></div>
+<div class="reveal"><dt><span>Red White Bleu</span><span class="menu-price">$19.95</span></dt><dd>Fresh strawberries, Belgian white chocolate and fresh blueberries.</dd></div>
+<div class="reveal"><dt><span>Monkey Fever</span><span class="menu-price">$18.95</span></dt><dd>Fresh bananas, crushed walnuts and Nutella.</dd></div>
+<div class="reveal"><dt><span>Monster Cookie</span><span class="menu-price">$18.95</span></dt><dd>Chocolate chip cookie, melted mini marshmallows, caramel and butter.</dd></div>
+<div class="reveal"><dt><span>Peaches &amp; Cream</span><span class="menu-price">$17.95</span></dt><dd>Sweet peaches, whipped cream and cinnamon brown sugar.</dd></div>
+<div class="reveal"><dt><span>Berry Swirl</span><span class="menu-price">$17.95</span></dt><dd>Fresh strawberries, blueberry jam and whipped cream.</dd></div>
+<div class="reveal"><dt><span>Brooklyn Bridge</span><span class="menu-price">$18.95</span></dt><dd>Fresh banana, peanut butter, butter and condensed milk.</dd></div>
+<div class="reveal"><dt><span>Biscoff Banofee</span><span class="menu-price">$17.95</span></dt><dd>Crushed Lotus Biscoff cookie, caramel and fresh bananas.</dd></div>
+<div class="reveal"><dt><span>Spiced Apple</span><span class="menu-price">$17.95</span></dt><dd>Sliced apples, cinnamon brown sugar, crushed walnuts and butter.</dd></div>
+<div class="reveal"><dt><span>High Line</span><span class="menu-price">$18.95</span></dt><dd>Fresh blueberries, fresh banana and strawberry jam.</dd></div></dl></details>
 </div>
 <div class="menu-group" data-category="savory">
-<div class="menu-group-heading reveal"><h3>Something savory.</h3><span>Crêpes</span></div>
-<img class="menu-photo reveal" src="assets/savory.png" width="1254" height="1254" loading="lazy" alt="Illustrative savory crêpe with mushrooms, spinach and cheese">
-<dl class="menu-items">
-<div class="reveal"><dt>Mushroom & spinach</dt><dd>Mushrooms, spinach and melted cheese.</dd></div>
-<div class="reveal"><dt>Ham & cheese</dt><dd>Savory ham with a generous fold of cheese.</dd></div>
-<div class="reveal"><dt>Chicken & mozzarella</dt><dd>Chicken, mozzarella and a savory sauce.</dd></div>
-<div class="reveal"><dt>Tomato & pesto</dt><dd>Tomato, mozzarella and basil pesto.</dd></div>
-</dl>
+<div class="menu-group-heading reveal"><h3>Savory crêpes</h3></div><p class="group-description">A taste of the city</p>
+<dl class="menu-items"><div class="reveal"><dt><span>Bryant Park</span><span class="menu-price">$23.95</span></dt><dd>Smashed avocado, organic baby spinach, fresh strawberries, sliced almonds and organic balsamic glaze.</dd></div>
+<div class="reveal"><dt><span>Little Paris</span><span class="menu-price">$19.95</span></dt><dd>Honey ham, Dijon mustard and melted Gruyère.</dd></div>
+<div class="reveal"><dt><span>Chelsea</span><span class="menu-price">$25.95</span></dt><dd>White meat chicken, mozzarella, organic baby spinach, fresh tomato and basil pesto.</dd></div>
+<div class="reveal"><dt><span>Mac-Attack</span><span class="menu-price">$26.95</span></dt><dd>Shell pasta in cheddar sauce, melted mozzarella, Parmesan and crispy bacon.</dd></div>
+<div class="reveal"><dt><span>City Hall</span><span class="menu-price">$20.95</span></dt><dd>Organic baby spinach, fresh tomato, mozzarella and basil pesto.</dd></div>
+<div class="reveal"><dt><span>Manhattan</span><span class="menu-price">$16.95</span></dt><dd>Honey ham and melted mozzarella.</dd></div></dl>
+<details class="more-menu"><summary>See all savory crêpes (16)</summary><dl class="menu-items"><div class="reveal"><dt><span>Spanish Harlem</span><span class="menu-price">$23.95</span></dt><dd>White meat chicken, fresh tomato, mozzarella and smashed avocado.</dd></div>
+<div class="reveal"><dt><span>Metropolitan</span><span class="menu-price">$23.95</span></dt><dd>Mozzarella, fresh tomato, a fried egg and crispy bacon.</dd></div>
+<div class="reveal"><dt><span>Madison</span><span class="menu-price">$21.95</span></dt><dd>Organic baby spinach, Gruyère, a fried egg, truffle salt and oil.</dd></div>
+<div class="reveal"><dt><span>Soho</span><span class="menu-price">$20.95</span></dt><dd>Crispy bacon, mozzarella and Parmesan.</dd></div>
+<div class="reveal"><dt><span>Nolita</span><span class="menu-price">$27.95</span></dt><dd>White meat chicken, mozzarella, organic baby spinach, crispy bacon and country ranch.</dd></div>
+<div class="reveal"><dt><span>Central Park</span><span class="menu-price">$21.95</span></dt><dd>Gruyère, mozzarella and Parmesan with garlic salt and black pepper.</dd></div>
+<div class="reveal"><dt><span>Baconator</span><span class="menu-price">$23.95</span></dt><dd>Sweet Nutella, mozzarella, fresh banana and crispy bacon.</dd></div>
+<div class="reveal"><dt><span>Paradox</span><span class="menu-price">$22.95</span></dt><dd>Sweet Nutella, fresh strawberries, honey ham and mozzarella.</dd></div>
+<div class="reveal"><dt><span>Charcuterie</span><span class="menu-price">$23.95</span></dt><dd>Honey ham, lightly melted Gruyère, fresh strawberries and Ritz crackers.</dd></div>
+<div class="reveal"><dt><span>Elvis Dream</span><span class="menu-price">$22.95</span></dt><dd>Cinnamon brown sugar, peanut butter, fresh bananas and crispy bacon.</dd></div></dl></details>
+</div>
+<div class="menu-group" data-category="waffles">
+<div class="menu-group-heading reveal"><h3>Bubble waffles</h3></div><p class="group-description">A little extra indulgence</p>
+<dl class="menu-items"><div class="reveal"><dt><span>The Bomb</span><span class="menu-price">$21.95</span></dt><dd>Whipped cream, ice cream, Nutella, fresh strawberries and banana.</dd></div>
+<div class="reveal"><dt><span>Mount Nutella</span><span class="menu-price">$19.95</span></dt><dd>Nutella, whipped cream and Ferrero Rocher.</dd></div>
+<div class="reveal"><dt><span>Strawberry Bliss</span><span class="menu-price">$17.95</span></dt><dd>Fresh strawberries, whipped cream and blueberry jam.</dd></div>
+<div class="reveal"><dt><span>Winter Camp</span><span class="menu-price">$21.95</span></dt><dd>Bear honey graham cookies, chocolate curls, marshmallows and whipped cream.</dd></div></dl>
+<details class="more-menu"><summary>See all bubble waffles (8)</summary><dl class="menu-items"><div class="reveal"><dt><span>Choco Banana</span><span class="menu-price">$17.95</span></dt><dd>Nutella, banana and whipped cream.</dd></div>
+<div class="reveal"><dt><span>Creamy Oreo</span><span class="menu-price">$17.95</span></dt><dd>Oreo, condensed milk and whipped cream.</dd></div>
+<div class="reveal"><dt><span>Berry Cookie</span><span class="menu-price">$17.95</span></dt><dd>Chocolate chip cookie, whipped cream and strawberry jam.</dd></div>
+<div class="reveal"><dt><span>Biscoff Whip</span><span class="menu-price">$17.95</span></dt><dd>Biscoff cookie, whipped cream and caramel.</dd></div></dl></details>
 </div>
 <div class="menu-group" data-category="drinks">
-<div class="menu-group-heading reveal"><h3>To warm up.</h3><span>Drinks</span></div>
-<img class="menu-photo reveal" src="assets/drinks.png" width="1254" height="1254" loading="lazy" alt="Illustrative mug of hot chocolate with marshmallows">
-<dl class="menu-items">
-<div class="reveal"><dt>Hot chocolate</dt><dd>A cozy chocolate break from the winter air.</dd></div>
-<div class="reveal"><dt>Hot apple cider</dt><dd>Warm apple goodness in a cup.</dd></div>
-<div class="reveal"><dt>Coffee</dt><dd>A little pick-me-up for your park stroll.</dd></div>
-<div class="reveal"><dt>Tea</dt><dd>A warm cup, a slower moment.</dd></div>
-</dl>
+<div class="menu-group-heading reveal"><h3>Hot chocolate</h3></div><p class="group-description">Winter in a cup</p>
+<dl class="menu-items"><div class="reveal"><dt><span>Nutella</span><span class="menu-price">$14.50</span></dt><dd>Hazelnut hot chocolate, whipped cream, chocolate curl, Ferrero Rocher and Nutella drizzle.</dd></div>
+<div class="reveal"><dt><span>S’mores</span><span class="menu-price">$14.50</span></dt><dd>Hershey’s hot chocolate, whipped cream, toasted marshmallow, bear honey graham cracker and chocolate curl.</dd></div>
+<div class="reveal"><dt><span>Dubai</span><span class="menu-price">$16.00</span></dt><dd>Pistachio hot chocolate, whipped cream, golden toasted kataifi and pistachio crème.</dd></div>
+<div class="reveal"><dt><span>Dulce Biscoff</span><span class="menu-price">$14.50</span></dt><dd>Dulce de leche hot chocolate, whipped cream, Lotus Biscoff cookie and caramel drizzle.</dd></div></dl>
+<details class="more-menu"><summary>See all hot chocolate (13)</summary><dl class="menu-items"><div class="reveal"><dt><span>Minty</span><span class="menu-price">$14.50</span></dt><dd>Peppermint hot chocolate, whipped cream, peppermint candy cane and festive sprinkles.</dd></div>
+<div class="reveal"><dt><span>Santa’s Cookie</span><span class="menu-price">$14.50</span></dt><dd>Cookie dough hot chocolate, whipped cream, chocolate chip cookies and chocolate curl.</dd></div>
+<div class="reveal"><dt><span>Oreo</span><span class="menu-price">$14.50</span></dt><dd>Hershey’s hot chocolate, whipped cream, chocolate curl and an Oreo cookie.</dd></div>
+<div class="reveal"><dt><span>Gingerbread</span><span class="menu-price">$14.50</span></dt><dd>Gingerbread hot chocolate, whipped cream, crushed peppermint and a gingersnap cookie.</dd></div>
+<div class="reveal"><dt><span>Tiramisu</span><span class="menu-price">$14.50</span></dt><dd>Tiramisu-inspired hot chocolate with Colombian coffee, whipped cream, cocoa powder and a ladyfinger cookie.</dd></div>
+<div class="reveal"><dt><span>Black Forest</span><span class="menu-price">$14.50</span></dt><dd>Cherry hot chocolate, whipped cream, maraschino cherry and chocolate curl.</dd></div>
+<div class="reveal"><dt><span>Vanilla Royale</span><span class="menu-price">$14.50</span></dt><dd>French vanilla hot chocolate, mini marshmallows, whipped cream, Hershey’s syrup and cocoa powder.</dd></div>
+<div class="reveal"><dt><span>House Classic</span><span class="menu-price">$8.00</span></dt><dd>Simple house hot chocolate. Toppings and flavor add-ons available.</dd></div>
+<div class="reveal"><dt><span>Hot Chocolate Float</span><span class="menu-price">$16.00</span></dt><dd>House hot chocolate, French vanilla ice cream, whipped cream, mini marshmallows and chocolate curl.</dd></div></dl></details>
 </div>
-<p class="allergen-note reveal">Food allergies? Please speak with our team before ordering. Ingredients and availability will be confirmed with the final menu.</p>
+<div class="menu-group" data-category="drinks">
+<div class="menu-group-heading reveal"><h3>Coffee</h3></div><p class="group-description">A Midtown pick-me-up</p>
+<dl class="menu-items"><div class="reveal"><dt><span>Colombian Coffee</span><span class="menu-price">$4.50</span></dt><dd>Fresh-drip 100% Colombian coffee, served hot.</dd></div>
+<div class="reveal"><dt><span>Caramel Coffee Float</span><span class="menu-price">$11.00</span></dt><dd>Hot Colombian coffee, French vanilla ice cream, whipped cream and caramel.</dd></div>
+<div class="reveal"><dt><span>Café au Lait</span><span class="menu-price">$5.50</span></dt><dd>Hot Colombian coffee with sweet condensed milk and hot whole milk.</dd></div>
+<div class="reveal"><dt><span>Spanish Café au Lait</span><span class="menu-price">$7.00</span></dt><dd>Hot Colombian coffee with sweet condensed milk and hot whole milk.</dd></div>
+<div class="reveal"><dt><span>Peppermint Mocha Café au Lait</span><span class="menu-price">$8.50</span></dt><dd>Hot Colombian coffee with peppermint hot chocolate and hot whole milk.</dd></div></dl>
+
+</div>
+<div class="menu-group" data-category="drinks">
+<div class="menu-group-heading reveal"><h3>Apple cider</h3></div><p class="group-description">Warm or refreshing</p>
+<dl class="menu-items"><div class="reveal"><dt><span>Original Apple Cider</span><span class="menu-price">$7.00</span></dt><dd>Served hot or cold.</dd></div>
+<div class="reveal"><dt><span>Spiced Hot Apple Cider</span><span class="menu-price">$9.00</span></dt><dd>A warm, spiced apple cider.</dd></div>
+<div class="reveal"><dt><span>Caramel &amp; Cream</span><span class="menu-price">$10.00</span></dt><dd>Original hot or cold apple cider with whipped cream and caramel.</dd></div>
+<div class="reveal"><dt><span>Spiced Caramel &amp; Cream</span><span class="menu-price">$12.00</span></dt><dd>Spiced hot apple cider with whipped cream and caramel.</dd></div>
+<div class="reveal"><dt><span>Apple Cider Float</span><span class="menu-price">$14.50</span></dt><dd>Cold original cider, French vanilla ice cream, whipped cream, caramel and a maraschino cherry.</dd></div></dl>
+
+</div>
+<details class="extras-menu">
+<summary>Extras & custom crêpes</summary>
+<p>Signature recipes come as listed. For different ingredients, ask us to create a custom crêpe.</p>
+<h3>Sweet additions</h3>
+<dl class="extras-list">
+<div><dt>$2.50 each</dt><dd>Butter brown sugar; cinnamon brown sugar butter; fresh lemon brown sugar; strawberry jam; blueberry jam; peanut butter; caramel; whipped cream.</dd></div>
+<div><dt>$3 each</dt><dd>Banana; apple; peaches; almonds; walnuts; toasted kataifi; Oreo; honey graham; Lotus Biscoff; chocolate chip cookie; Ritz cracker; mini marshmallows; condensed milk; Nutella.</dd></div>
+<div><dt>$3.50 each</dt><dd>Strawberries; blueberries; a scoop of French vanilla ice cream; Belgian milk, white or dark chocolate.</dd></div>
+<div><dt>$4 each</dt><dd>Pistachio crème; a slice of NY cheesecake.</dd></div></dl>
+<h3>Savory additions</h3><dl class="extras-list">
+<div><dt>$2 each</dt><dd>Basil pesto; organic balsamic glaze; Dijon mustard; country ranch; spicy sriracha; garlic salt & black pepper; truffle salt & oil.</dd></div>
+<div><dt>$3 each</dt><dd>Organic baby spinach; tomato; smashed avocado; a fried egg; mozzarella; Parmesan.</dd></div>
+<div><dt>$4 each</dt><dd>Ham; Gruyère.</dd></div>
+<div><dt>$5 each</dt><dd>Crispy bacon; white meat chicken.</dd></div></dl>
+<h3>Hot chocolate extras</h3><p>Whipped cream +$1.50 · Mini marshmallows +$2 · Torched jumbo marshmallow +$4 · French vanilla ice cream +$3.50 · Nutella fresh strawberry dip +$4.</p>
+<p>Flavor add-ons +$1.50 each: French vanilla, hazelnut, caramel, salted caramel, pumpkin spice, or cinnamon brown sugar.</p>
+</details>
+<p class="allergen-note reveal">Prices are subject to applicable tax. Menu items and prices may change. Signature recipes cannot be adjusted; custom crêpes are available. For food allergies, please speak with our team before ordering.</p>
 </section>
 <section class="visit-section section-pad" id="visit">
 <h2 class="section-title reveal">Find us<br>in the park.</h2>
-<p class="visit-place reveal">Bryant Park<br>Winter Village</p>
+<img class="visit-logo reveal" src="assets/gold-logo.png" width="1500" height="1500" loading="lazy" alt="Crêpe Café gold crest, started serving in 2008"><p class="visit-place reveal">Bryant Park<br>Winter Village</p>
 <address class="reveal">Between Fifth & Sixth Avenues<br>40th–42nd Streets<br>New York, NY</address>
 <p class="reveal">Make us part of your winter wander. Stop by for a crêpe while you explore the Holiday Shops.</p>
 <a class="button reveal" href="https://www.google.com/maps/dir/?api=1&destination=Bryant+Park+New+York+NY" target="_blank" rel="noopener noreferrer">Get directions <span aria-hidden="true">↗</span></a>
 <a class="text-link reveal" href="https://bryantpark.org/activities/bank-of-america-winter-village-at-bryant-park" target="_blank" rel="noopener noreferrer">Explore Winter Village</a>
 </section>
 <section class="hours-section section-pad" id="hours">
+<img class="menu-photo hours-photo reveal" src="assets/drinks.png" width="1254" height="1254" loading="lazy" alt="Illustrative hot chocolate; see the menu for actual toppings">
 <h2 class="section-title reveal">Plan your visit.</h2>
 <p class="section-intro reveal">The season is short.<br>Make it a sweet one.</p>
 <dl class="hours-list reveal">
@@ -99,10 +170,10 @@
 </section>
 <footer class="section-pad">
 <h2 class="reveal">See you at the park.</h2>
-<a href="#home" class="footer-brand reveal">crêpe café</a>
+<a href="#home" class="footer-brand reveal">Crêpe Café</a>
 <p class="reveal">A little warmth in the heart of Midtown.</p>
 <div class="footer-links"><a href="#menu">Menu</a><a href="#hours">Hours</a><a href="#visit">Directions</a></div>
-<p class="credits">Imagery is AI-generated and illustrative. Sample menu awaiting confirmation.</p>
+<p class="credits">Serving since 2008. Find us on Instagram <a href="https://www.instagram.com/crepecafenyc/" target="_blank" rel="noopener noreferrer">@CrepeCafeNYC</a>. Food photographs are AI-generated serving illustrations; kiosk photo and logo are ours.</p>
 <p class="copyright">© <span id="copyright-year">2026</span> Crepe Cafe · Bryant Park, NYC</p>
 </footer>
 </div>
