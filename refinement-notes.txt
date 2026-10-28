@@ -21,3 +21,5 @@ Verification
 
 Visual review
 The hierarchy is clearer: real food first, the kiosk next, featured choices, menu, and one compact visit section. The map no longer repeats the location call to action. Food images share a consistent treatment and longer menu descriptions remain readable on phones. The warm neutral palette and curved frames are intentional. Daily operating hours are the only outstanding business detail in the visit section.
+
+Owner update, October 28, 2026: confirmed seasonal hours are Monday–Thursday 10 AM–10 PM and Friday–Sunday 10 AM–11 PM. This supersedes the earlier unconfirmed-hours notes. Location button wording is now Get Directions; its destination remains the supplied Google Maps pin.
