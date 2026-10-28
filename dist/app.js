@@ -7,7 +7,10 @@ function updateSeason(){
  if(seasonMode!==state.active){
   byId('season-message').textContent=state.active?'It’s here. Come visit us at Bryant Park Winter Village.':'Counting down to October 28 at Bryant Park.';
   byId('countdown').hidden=state.active;seasonMode=state.active;
+  byId('season-link').innerHTML=(state.active?'Come find us':'Plan your visit')+' <span aria-hidden="true">↗</span>';
+  byId('visit-description').textContent=state.active?'Find our blue-and-gold kiosk along the 40th Street side of Bryant Park.':'We’ll be back October 28. Our previous Winter Village location is shown below; follow Instagram for next-season details.';
  }
+ byId('season-year').textContent=state.startYear+'–'+state.endYear+(state.active?' café season':' · Next café season');
  if(!state.active){const p=countdownParts(state.remainingMs);byId('days').textContent=p.days;byId('hours-left').textContent=String(p.hours).padStart(2,'0');byId('minutes').textContent=String(p.minutes).padStart(2,'0');byId('seconds').textContent=String(p.seconds).padStart(2,'0');}
  byId('copyright-year').textContent=now.getFullYear();
 }
@@ -22,15 +25,16 @@ window.matchMedia('(min-width:761px)').addEventListener('change',closeNav);
 const items=[...document.querySelectorAll('.menu-item')],buttons=[...document.querySelectorAll('[data-filter]')],search=byId('menu-search');
 const labels={all:'All favorites',sweet:'Sweet crêpes',savory:'Savory crêpes',waffles:'Bubble waffles',chocolate:'Hot chocolate',coffee:'Coffee & cider'};
 let category='sweet',limit=9;
+const normalizeSearch=text=>text.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase().replace(/[’']/g,'').replace(/\b(\w+)ies\b/g,'$1y');
 function renderMenu(){
- const query=search.value.trim().toLocaleLowerCase();
- const filtered=items.filter(item=>(category==='all'||item.dataset.category===category||(category==='coffee'&&item.dataset.category==='cider'))&&item.textContent.toLocaleLowerCase().includes(query));
+ const query=normalizeSearch(search.value.trim()),terms=query.split(/\s+/).filter(Boolean);
+ const filtered=items.filter(item=>(category==='all'||item.dataset.category===category||(category==='coffee'&&item.dataset.category==='cider'))&&terms.every(term=>normalizeSearch(item.textContent+' '+(labels[item.dataset.category]||'Apple cider')).includes(term)));
  items.forEach(item=>item.hidden=true);filtered.slice(0,limit).forEach(item=>item.hidden=false);
  buttons.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.filter===category)));
  byId('menu-heading').textContent=labels[category];
- byId('menu-count').textContent=filtered.length+(filtered.length===1?' choice':' choices')+(query?' matching your search':'');
+ byId('menu-count').textContent=(filtered.length>limit?'Showing '+limit+' of ':'')+filtered.length+(filtered.length===1?' choice':' choices')+(query?' matching your search':'');
  byId('show-more').hidden=filtered.length<=limit;
- byId('show-more').textContent='See '+Math.min(9,filtered.length-limit)+' more '+(category==='all'?'favorites':labels[category].toLowerCase());
+ byId('show-more').textContent='See '+Math.max(0,Math.min(9,filtered.length-limit))+' more '+(category==='all'?'favorites':labels[category].toLowerCase());
  byId('more-menu').hidden=!filtered.slice(0,limit).some(item=>item.classList.contains('text-only'));
  byId('menu-list').hidden=!filtered.slice(0,limit).some(item=>item.classList.contains('has-photo'));
  byId('no-results').hidden=filtered.length>0;byId('clear-search').hidden=!query;
@@ -46,7 +50,7 @@ if('IntersectionObserver' in window){const observer=new IntersectionObserver(ent
 
 const signatureData={
  french:{image:'menu/592A9307-960.jpg',real:true,alt:'French Kiss crêpe photographed for Crêpe Café',description:'Nutella, fresh bananas and fresh strawberries, wrapped in a golden crêpe.',category:'sweet',link:'Explore sweet crêpes'},
- dubai:{image:'dubai-cutout.png',alt:'Illustrative Taste of Dubai crêpe with pistachio crème, kataifi, strawberries and milk chocolate',description:'Golden toasted kataifi, pistachio crème, fresh strawberries and Belgian milk chocolate.',category:'sweet',link:'Explore sweet crêpes'},
+ park:{image:'menu/592A9039-960.jpg',real:true,alt:'Bryant Park savory crêpe photographed for Crêpe Café',description:'Smashed avocado, organic baby spinach, fresh strawberries, sliced almonds and organic balsamic glaze.',category:'savory',link:'Explore savory crêpes'},
  waffle:{image:'menu/592A0824-960.jpg',real:true,alt:'The Bomb bubble waffle photographed for Crêpe Café',description:'Whipped cream, ice cream, Nutella, fresh strawberries and banana in a golden bubble waffle.',category:'waffles',link:'Explore bubble waffles'}
 };
 document.querySelectorAll('[data-signature]').forEach(button=>button.addEventListener('click',()=>{

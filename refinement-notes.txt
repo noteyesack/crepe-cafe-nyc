@@ -1,0 +1,23 @@
+Website refinement — October 28, 2026
+
+Retained the established warm neutral surfaces, blue accents, rounded photo frames, and typography requested by the owner. This is a refinement of the existing direction, not a new design.
+
+Changes
+- Replaced the remaining generated food feature with the owner's Bryant Park savory crepe photograph. Taste of Dubai remains in the full menu with its supplied description.
+- Clarified the opening offer and made its main action go directly to the menu.
+- Shortened menu and hours copy; daily hours remain unconfirmed and are not invented.
+- Consolidated the visit area into one location button, one embedded map, and a compact season/hours block. The button opens the owner's shared coordinates as a Google Maps pin.
+- Improved search for accents, apostrophes, multiple words, and strawberry/strawberries. Result counts now explain pagination.
+- Updated off-season visit wording and next-season years; improved the mobile countdown layout.
+- Added social preview metadata using a real supplied photo.
+
+Verification
+- Real browser: all six menu category filters, strawberry search, cafe au lait search, empty results/reset, show more, photo viewer opening/Escape, featured savory photo/category link, waffle selection, and custom menu disclosure passed.
+- January 3 demo showed the countdown, Plan your visit link, next-season years and off-season location wording.
+- No captured browser console errors in either seasonal view.
+- Six existing seasonal boundary tests passed. JavaScript syntax check passed.
+- Static integrity check passed: 63 price-free items, 43 menu photographs, all local assets and section anchors exist, unique IDs, direct pin coordinates.
+- Browser inspector passed at 1440, 768 and 390 pixels, with no failures. Reviewed full-page screenshot sheets. Existing warnings retained: warm neutral palette is the owner's choice; the established typography includes several supporting sizes; no authentic video was supplied.
+
+Visual review
+The hierarchy is clearer: real food first, the kiosk next, featured choices, menu, and one compact visit section. The map no longer repeats the location call to action. Food images share a consistent treatment and longer menu descriptions remain readable on phones. The warm neutral palette and curved frames are intentional. Daily operating hours are the only outstanding business detail in the visit section.
