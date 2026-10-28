@@ -1,0 +1,862 @@
+{
+  "sweet|French Kiss": {
+    "source": "592A9307.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A9307-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A9307-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A9307-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "sweet|S’mores": {
+    "source": "592A9259.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A9259-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A9259-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A9259-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "sweet|Oreo Crushed": {
+    "source": "592A9129.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A9129-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A9129-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A9129-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "sweet|Cheesecake Love": {
+    "source": "592A9237.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A9237-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A9237-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A9237-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "sweet|Ooh La La": {
+    "source": "592A9248.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A9248-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A9248-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A9248-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "sweet|Campfire Banana": {
+    "source": "592A9113.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A9113-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A9113-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A9113-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "sweet|Red White Bleu": {
+    "source": "592A9187.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A9187-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A9187-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A9187-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "sweet|Monkey Fever": {
+    "source": "592A9296.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A9296-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A9296-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A9296-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "sweet|Peaches & Cream": {
+    "source": "592A9166.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A9166-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A9166-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A9166-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "sweet|Spiced Apple": {
+    "source": "592A9270.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A9270-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A9270-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A9270-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "savory|Bryant Park": {
+    "source": "592A9039.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A9039-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A9039-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A9039-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "savory|Little Paris": {
+    "source": "592A8947.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A8947-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A8947-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A8947-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "savory|Chelsea": {
+    "source": "592A8931.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A8931-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A8931-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A8931-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "savory|Mac-Attack": {
+    "source": "592A8858.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A8858-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A8858-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A8858-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "savory|City Hall": {
+    "source": "592A8926.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A8926-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A8926-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A8926-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "savory|Manhattan": {
+    "source": "592A8843.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A8843-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A8843-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A8843-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "savory|Spanish Harlem": {
+    "source": "592A9027.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A9027-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A9027-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A9027-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "savory|Metropolitan": {
+    "source": "592A8977.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A8977-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A8977-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A8977-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "savory|Madison": {
+    "source": "592A8991.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A8991-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A8991-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A8991-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "savory|Soho": {
+    "source": "592A8960.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A8960-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A8960-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A8960-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "savory|Nolita": {
+    "source": "592A8915.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A8915-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A8915-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A8915-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "savory|Central Park": {
+    "source": "592A9016.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A9016-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A9016-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A9016-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "savory|Baconator": {
+    "source": "592A9077.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A9077-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A9077-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A9077-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "savory|Paradox": {
+    "source": "592A9089.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A9089-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A9089-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A9089-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "savory|Elvis Dream": {
+    "source": "592A9101.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A9101-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A9101-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A9101-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "waffles|The Bomb": {
+    "source": "592A0824.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A0824-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A0824-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A0824-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "waffles|Mount Nutella": {
+    "source": "592A0768.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A0768-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A0768-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A0768-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "waffles|Strawberry Bliss": {
+    "source": "592A0778.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A0778-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A0778-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A0778-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "waffles|Winter Camp": {
+    "source": "592A0814.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A0814-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A0814-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A0814-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "waffles|Choco Banana": {
+    "source": "592A0763.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A0763-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A0763-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A0763-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "waffles|Creamy Oreo": {
+    "source": "592A0783.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A0783-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A0783-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A0783-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "chocolate|Nutella": {
+    "source": "592A0641.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A0641-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A0641-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A0641-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "chocolate|S’mores": {
+    "source": "592A0662.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A0662-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A0662-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A0662-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "chocolate|Dulce Biscoff": {
+    "source": "592A0692.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A0692-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A0692-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A0692-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "chocolate|Minty": {
+    "source": "592A0647.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A0647-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A0647-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A0647-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "chocolate|Santa’s Cookie": {
+    "source": "592A0697.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A0697-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A0697-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A0697-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "chocolate|Oreo": {
+    "source": "592A0672.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A0672-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A0672-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A0672-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "chocolate|Gingerbread": {
+    "source": "592A0667.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A0667-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A0667-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A0667-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "chocolate|Tiramisu": {
+    "source": "592A0680.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A0680-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A0680-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A0680-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "chocolate|Black Forest": {
+    "source": "592A0702.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A0702-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A0702-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A0702-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "chocolate|Vanilla Royale": {
+    "source": "592A0634.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A0634-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A0634-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A0634-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "cider|Caramel & Cream": {
+    "source": "592A0717.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A0717-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A0717-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A0717-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  },
+  "cider|Apple Cider Float": {
+    "source": "592A0707.jpg",
+    "files": {
+      "480": {
+        "path": "assets/menu/592A0707-480.jpg",
+        "width": 480,
+        "height": 320
+      },
+      "960": {
+        "path": "assets/menu/592A0707-960.jpg",
+        "width": 960,
+        "height": 640
+      },
+      "1600": {
+        "path": "assets/menu/592A0707-1600.jpg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  }
+}

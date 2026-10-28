@@ -21,7 +21,7 @@ document.addEventListener('click',e=>{if(!e.target.closest('.site-header'))close
 window.matchMedia('(min-width:761px)').addEventListener('change',closeNav);
 const items=[...document.querySelectorAll('.menu-item')],buttons=[...document.querySelectorAll('[data-filter]')],search=byId('menu-search');
 const labels={all:'All favorites',sweet:'Sweet crêpes',savory:'Savory crêpes',waffles:'Bubble waffles',chocolate:'Hot chocolate',coffee:'Coffee & cider'};
-let category='sweet',limit=8;
+let category='sweet',limit=9;
 function renderMenu(){
  const query=search.value.trim().toLocaleLowerCase();
  const filtered=items.filter(item=>(category==='all'||item.dataset.category===category||(category==='coffee'&&item.dataset.category==='cider'))&&item.textContent.toLocaleLowerCase().includes(query));
@@ -30,28 +30,44 @@ function renderMenu(){
  byId('menu-heading').textContent=labels[category];
  byId('menu-count').textContent=filtered.length+(filtered.length===1?' choice':' choices')+(query?' matching your search':'');
  byId('show-more').hidden=filtered.length<=limit;
- byId('show-more').textContent='See '+Math.min(8,filtered.length-limit)+' more '+(category==='all'?'favorites':labels[category].toLowerCase());
+ byId('show-more').textContent='See '+Math.min(9,filtered.length-limit)+' more '+(category==='all'?'favorites':labels[category].toLowerCase());
+ byId('more-menu').hidden=!filtered.slice(0,limit).some(item=>item.classList.contains('text-only'));
+ byId('menu-list').hidden=!filtered.slice(0,limit).some(item=>item.classList.contains('has-photo'));
  byId('no-results').hidden=filtered.length>0;byId('clear-search').hidden=!query;
 }
-buttons.forEach(button=>button.addEventListener('click',()=>{category=button.dataset.filter;limit=8;renderMenu();}));
-search.addEventListener('input',()=>{category='all';limit=8;renderMenu();});
-byId('clear-search').addEventListener('click',()=>{search.value='';limit=8;renderMenu();search.focus();});
-byId('reset-menu').addEventListener('click',()=>{category='all';search.value='';limit=8;renderMenu();search.focus();});
-byId('show-more').addEventListener('click',()=>{const oldLimit=limit;limit+=8;renderMenu();const visible=items.filter(i=>!i.hidden);const next=visible[oldLimit];if(next){next.setAttribute('tabindex','-1');next.focus({preventScroll:true});}});
-document.querySelectorAll('[data-menu-jump]').forEach(a=>a.addEventListener('click',()=>{category=a.dataset.menuJump;search.value='';limit=8;renderMenu();}));
+buttons.forEach(button=>button.addEventListener('click',()=>{category=button.dataset.filter;limit=9;renderMenu();}));
+search.addEventListener('input',()=>{category='all';limit=9;renderMenu();});
+byId('clear-search').addEventListener('click',()=>{search.value='';limit=9;renderMenu();search.focus();});
+byId('reset-menu').addEventListener('click',()=>{category='all';search.value='';limit=9;renderMenu();search.focus();});
+byId('show-more').addEventListener('click',()=>{const oldLimit=limit;limit+=9;renderMenu();const visible=items.filter(i=>!i.hidden);const next=visible[oldLimit];if(next){next.setAttribute('tabindex','-1');next.focus({preventScroll:true});}});
+document.querySelectorAll('[data-menu-jump]').forEach(a=>a.addEventListener('click',()=>{category=a.dataset.menuJump;search.value='';limit=9;renderMenu();}));
 renderMenu();
 if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('entered');observer.unobserve(e.target);}}),{threshold:.06});document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.setProperty('--delay',(i%3)*60+'ms');observer.observe(el);});}
 
 const signatureData={
- french:{image:'crepe-cutout.png',alt:'Illustrative French Kiss crêpe with strawberries, banana and chocolate',description:'Nutella, fresh bananas and fresh strawberries, wrapped in a golden crêpe.',category:'sweet',link:'Explore sweet crêpes'},
+ french:{image:'menu/592A9307-960.jpg',real:true,alt:'French Kiss crêpe photographed for Crêpe Café',description:'Nutella, fresh bananas and fresh strawberries, wrapped in a golden crêpe.',category:'sweet',link:'Explore sweet crêpes'},
  dubai:{image:'dubai-cutout.png',alt:'Illustrative Taste of Dubai crêpe with pistachio crème, kataifi, strawberries and milk chocolate',description:'Golden toasted kataifi, pistachio crème, fresh strawberries and Belgian milk chocolate.',category:'sweet',link:'Explore sweet crêpes'},
- waffle:{image:'waffle-cutout.png',alt:'Illustrative bubble waffle with ice cream, whipped cream, Nutella, strawberries and banana',description:'Whipped cream, ice cream, Nutella, fresh strawberries and banana in a golden bubble waffle.',category:'waffles',link:'Explore bubble waffles'}
+ waffle:{image:'menu/592A0824-960.jpg',real:true,alt:'The Bomb bubble waffle photographed for Crêpe Café',description:'Whipped cream, ice cream, Nutella, fresh strawberries and banana in a golden bubble waffle.',category:'waffles',link:'Explore bubble waffles'}
 };
 document.querySelectorAll('[data-signature]').forEach(button=>button.addEventListener('click',()=>{
  const data=signatureData[button.dataset.signature];
  document.querySelectorAll('[data-signature]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
- const img=byId('signature-image');img.src='assets/'+data.image;img.alt=data.alt;
+ const img=byId('signature-image');img.src='assets/'+data.image;img.alt=data.alt;img.classList.toggle('real-dish',!!data.real);byId('signature-caption').textContent=data.real?'Crêpe Café photography':'AI-generated serving illustration';
  if(!matchMedia('(prefers-reduced-motion: reduce)').matches)img.animate([{opacity:.2,transform:'translateY(15px) rotate(3deg)'},{opacity:1,transform:'translateY(0) rotate(0)'}],{duration:450,easing:'ease-out'});
  byId('signature-description').textContent=data.description;
  const link=byId('signature-menu-link');link.dataset.menuJump=data.category;link.textContent=data.link+' ↗';
 }));
+
+const photoDialog=byId('photo-dialog');let photoOpener;
+document.querySelectorAll('.menu-photo').forEach(link=>link.addEventListener('click',event=>{
+ if(typeof photoDialog.showModal!=='function')return;
+ event.preventDefault();photoOpener=link;
+ const article=link.closest('.menu-item'),title=article.querySelector('h4').textContent;
+ byId('photo-dialog-title').textContent=title;
+ byId('photo-dialog-description').textContent=article.querySelector('.menu-item-copy p').textContent;
+ byId('photo-dialog-image').src=link.href;byId('photo-dialog-image').alt=title+' photographed for Crêpe Café';
+ photoDialog.showModal();document.body.classList.add('photo-open');
+}));
+photoDialog.querySelector('.photo-close').addEventListener('click',()=>photoDialog.close());
+photoDialog.addEventListener('click',event=>{if(event.target===photoDialog){const r=photoDialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)photoDialog.close();}});
+photoDialog.addEventListener('close',()=>{document.body.classList.remove('photo-open');photoOpener?.focus({preventScroll:true});});
