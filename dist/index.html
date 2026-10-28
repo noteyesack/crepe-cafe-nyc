@@ -4,11 +4,11 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Crêpe Café | Bryant Park Winter Village NYC</title>
 <meta name="description" content="Sweet and savory crêpes, bubble waffles, and holiday drinks at Bryant Park Winter Village. Explore our 2026 menu and plan your visit, October 28–January 2.">
-<meta name="theme-color" content="#182d76">
+<meta name="theme-color" content="#f8f7f3">
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"><script type="module" src="app.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="cafe.css"><link rel="stylesheet" href="soft-cafe.css"><script type="module" src="app.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -23,7 +23,7 @@
 <div class="wrap header-inner">
 <a class="brand" href="#home" aria-label="Crêpe Café home"><img src="assets/gold-logo.png" width="1500" height="1500" alt=""><span>Crêpe Café</span></a>
 <button class="nav-toggle" aria-controls="navigation" aria-expanded="false">Explore <span aria-hidden="true">+</span></button>
-<nav id="navigation" aria-label="Main navigation"><a href="#menu">Our menu</a><a href="#visit">Find us</a><a href="#hours">Hours</a><a href="https://www.instagram.com/crepecafenyc/" target="_blank" rel="noopener noreferrer">Instagram</a></nav>
+<nav id="navigation" aria-label="Main navigation"><a href="#signatures">Signatures</a><a href="#menu">Our menu</a><a href="#visit">Find us</a><a href="#hours">Hours</a><a href="https://www.instagram.com/crepecafenyc/" target="_blank" rel="noopener noreferrer">Instagram</a></nav>
 <a class="header-visit" href="#visit">Visit Bryant Park <span aria-hidden="true">↗</span></a>
 </div>
 </header>
@@ -33,33 +33,40 @@
 <div class="wrap hero-grid">
 <div class="hero-copy">
 <h1 class="reveal">Sweet on<br>New York.</h1>
-<p class="hero-description reveal">Warm crêpes. Winter strolls.<br>Your little stop at Bryant Park.</p>
-<div class="hero-actions reveal"><a class="button" href="#menu">Explore the menu <span aria-hidden="true">↘</span></a><a class="simple-link" href="#visit">Find our kiosk</a></div>
-<p class="hero-dates reveal">October 28 – January 2<br>Bryant Park Winter Village, NYC</p>
+<p class="hero-description reveal">Golden crêpes. A little chocolate. <br>A New York winter tradition.</p>
+<div class="hero-actions reveal"><a class="button" href="#signatures">Find your favorite <span aria-hidden="true">↘</span></a><a class="simple-link" href="#visit">Find our kiosk</a></div>
+<div class="hero-dates reveal"><p>Bryant Park Winter Village</p><p>October 28 – January 2</p></div>
 </div>
 </div>
 </section>
-<section class="invitation wrap" aria-label="About Crêpe Café">
-<h2 class="reveal">Folded fresh.<br>Enjoyed on the go.</h2>
-<div><p class="reveal">A crêpe in hand and the city around you. From Nutella and strawberries to savory neighborhood favorites, there’s a little something for every winter wander.</p><a class="simple-link reveal" href="#menu">Find your favorite</a></div>
+<section class="park-story" aria-label="Our Bryant Park kiosk">
+<div class="park-picture"><img src="assets/kiosk.png" width="741" height="647" loading="lazy" alt="Our green-framed Bryant Park kiosk with the original blue-and-gold Crêpe Café signage"></div>
+<div class="park-copy"><h2 class="reveal">A little Paris.<br>A lot of New York.</h2><p>Serving New York since 2008. Find our blue-and-gold kiosk among the shops at Bryant Park Winter Village. Pick something sweet, make it savory, and take a little warmth on your winter wander.</p><a class="simple-link" href="#visit">Meet us in the park <span aria-hidden="true">↗</span></a></div>
 </section>
-<section class="flavors" aria-label="Explore savory crêpes and winter drinks">
-<article class="flavor savory-flavor">
-<div class="flavor-image"><img class="reveal" src="assets/savory.png" width="1254" height="1254" loading="lazy" alt="Illustrative savory crêpe with melted cheese and greens"></div>
-<div class="flavor-caption"><div><h2 class="reveal">Make it savory.</h2><p class="reveal">Little Paris. Chelsea. City Hall.</p></div><a class="flavor-link" href="#menu" data-menu-jump="savory" aria-label="Explore savory crêpes">Explore <span aria-hidden="true">↗</span></a></div>
-</article>
-<article class="flavor chocolate-flavor">
-<div class="flavor-image"><img class="reveal" src="assets/drinks.png" width="1254" height="1254" loading="lazy" alt="Illustrative hot chocolate topped with marshmallows"></div>
-<div class="flavor-caption"><div><h2 class="reveal">Warm your hands.</h2><p class="reveal">Hot chocolate with a little extra.</p></div><a class="flavor-link" href="#menu" data-menu-jump="chocolate" aria-label="Explore hot chocolates">Explore <span aria-hidden="true">↗</span></a></div>
-</article>
+<section class="signature-section" id="signatures" aria-labelledby="signature-heading">
+<div class="wrap signature-intro"><h2 class="reveal" id="signature-heading">Love at first bite.</h2><p>Three delicious places to start.<br>Choose one for a closer look.</p></div>
+<div class="wrap signature-layout">
+<div class="signature-choices" role="group" aria-label="Choose a signature dish">
+<button class="signature-choice" data-signature="french" aria-pressed="true"><span>French Kiss</span><small>Nutella, strawberry & banana</small><b aria-hidden="true">↗</b></button>
+<button class="signature-choice" data-signature="dubai" aria-pressed="false"><span>Taste of Dubai</span><small>Pistachio, kataifi & chocolate</small><b aria-hidden="true">↗</b></button>
+<button class="signature-choice" data-signature="waffle" aria-pressed="false"><span>The Bomb</span><small>Our loaded bubble waffle</small><b aria-hidden="true">↗</b></button>
+<div class="signature-detail" aria-live="polite"><p id="signature-description">Nutella, fresh bananas and fresh strawberries, wrapped in a golden crêpe.</p><a class="simple-link" id="signature-menu-link" href="#menu" data-menu-jump="sweet">Explore sweet crêpes <span aria-hidden="true">↗</span></a></div>
+</div>
+<figure class="signature-art"><img id="signature-image" src="assets/crepe-cutout.png" width="1024" height="1536" loading="lazy" alt="Illustrative French Kiss crêpe with strawberries, banana and chocolate"><figcaption>Serving illustration</figcaption></figure>
+</div>
+<noscript><p class="wrap">Explore French Kiss, Taste of Dubai and The Bomb in our full menu below.</p></noscript>
+</section>
+<section class="winter-pair" aria-label="Holiday hot chocolate">
+<figure><img src="assets/drinks.png" width="1254" height="1254" loading="lazy" alt="Illustrative hot chocolate with toasted marshmallows"></figure>
+<div class="winter-copy"><h2 class="reveal">Cold hands.<br>Hot chocolate.</h2><p>From Nutella and S’mores to Dubai pistachio and Dulce Biscoff. Find the cup that makes your winter stroll a little sweeter.</p><a class="button gold" href="#menu" data-menu-jump="chocolate">Find your winter warmer <span aria-hidden="true">↗</span></a></div>
 </section>
 <section class="menu-section wrap" id="menu">
-<div class="menu-intro"><h2 class="reveal">What are you<br>craving?</h2><p class="reveal">Explore the 2026 menu.<br>Sweet, savory, and everything cozy.</p></div>
+<div class="menu-intro"><h2 class="reveal">The café menu.</h2><p class="reveal">Explore the 2026 menu.<br>Sweet, savory, and everything cozy.</p></div>
 <div class="menu-controls">
 <div class="filters" role="group" aria-label="Menu categories">
 <button data-filter="all" aria-pressed="true">All</button><button data-filter="sweet" aria-pressed="false">Sweet crêpes</button><button data-filter="savory" aria-pressed="false">Savory crêpes</button><button data-filter="waffles" aria-pressed="false">Waffles</button><button data-filter="chocolate" aria-pressed="false">Hot chocolate</button><button data-filter="coffee" aria-pressed="false">Coffee & cider</button>
 </div>
-<div class="search-wrap"><label for="menu-search">Find a favorite</label><input id="menu-search" type="search" placeholder="Try Nutella, strawberry, chicken…" autocomplete="off"><button id="clear-search" type="button" hidden>Clear</button></div>
+<div class="search-wrap" data-ui><label for="menu-search">Find a favorite</label><input id="menu-search" type="search" placeholder="Try Nutella, strawberry, chicken…" autocomplete="off"><button id="clear-search" type="button" hidden>Clear</button></div>
 </div>
 <div class="menu-summary"><h3 id="menu-heading">All favorites</h3><p id="menu-count" role="status" aria-live="polite">63 choices</p></div>
 <div class="menu-list" id="menu-list">
@@ -136,13 +143,13 @@
 <section class="visit-section" id="visit">
 <div class="wrap visit-grid">
 <div class="visit-copy">
-<h2 class="reveal">Meet us<br>at Bryant Park.</h2>
+<h2 class="reveal">See you<br>in the park.</h2>
 <p class="visit-description reveal">Look for the blue-and-gold Crêpe Café kiosk. Follow the smell of warm crêpes.</p>
 <address class="reveal">Bryant Park Winter Village<br>Between Fifth & Sixth Avenues<br>40th–42nd Streets, New York, NY</address>
 <a class="button gold reveal" href="https://www.google.com/maps/dir/?api=1&destination=Bryant+Park+New+York+NY" target="_blank" rel="noopener noreferrer">Get directions <span aria-hidden="true">↗</span></a>
-<div class="hours-block reveal" id="hours"><h3>Season & hours</h3><p>October 28 – January 2</p><p>Daily café hours will be posted here soon.</p><small>Our seasonal welcome marks the season, not whether the kiosk is open right now.</small></div>
+
 </div>
-<figure class="kiosk-photo reveal"><img src="assets/kiosk.png" width="741" height="647" loading="lazy" alt="The Crêpe Café kiosk at Bryant Park with blue-and-gold signage"><figcaption>Your winter stop, right in the park.</figcaption></figure>
+<div class="visit-season"><p class="season-date">Oct 28<br>— Jan 2</p><p class="season-year">Our Winter Village season</p><div class="hours-block reveal" id="hours"><h3>Season & hours</h3><p>October 28 – January 2</p><p>Daily café hours will be posted here soon.</p><small>Our seasonal welcome marks the season, not whether the kiosk is open right now.</small></div><a class="simple-link" href="https://www.instagram.com/crepecafenyc/" target="_blank" rel="noopener noreferrer">Follow the season on Instagram ↗</a></div>
 </div>
 </section>
 </main>

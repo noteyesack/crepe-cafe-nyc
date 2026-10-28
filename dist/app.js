@@ -41,3 +41,17 @@ byId('show-more').addEventListener('click',()=>{const oldLimit=limit;limit+=8;re
 document.querySelectorAll('[data-menu-jump]').forEach(a=>a.addEventListener('click',()=>{category=a.dataset.menuJump;search.value='';limit=8;renderMenu();}));
 renderMenu();
 if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('entered');observer.unobserve(e.target);}}),{threshold:.06});document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.setProperty('--delay',(i%3)*60+'ms');observer.observe(el);});}
+
+const signatureData={
+ french:{image:'crepe-cutout.png',alt:'Illustrative French Kiss crêpe with strawberries, banana and chocolate',description:'Nutella, fresh bananas and fresh strawberries, wrapped in a golden crêpe.',category:'sweet',link:'Explore sweet crêpes'},
+ dubai:{image:'dubai-cutout.png',alt:'Illustrative Taste of Dubai crêpe with pistachio crème, kataifi, strawberries and milk chocolate',description:'Golden toasted kataifi, pistachio crème, fresh strawberries and Belgian milk chocolate.',category:'sweet',link:'Explore sweet crêpes'},
+ waffle:{image:'waffle-cutout.png',alt:'Illustrative bubble waffle with ice cream, whipped cream, Nutella, strawberries and banana',description:'Whipped cream, ice cream, Nutella, fresh strawberries and banana in a golden bubble waffle.',category:'waffles',link:'Explore bubble waffles'}
+};
+document.querySelectorAll('[data-signature]').forEach(button=>button.addEventListener('click',()=>{
+ const data=signatureData[button.dataset.signature];
+ document.querySelectorAll('[data-signature]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+ const img=byId('signature-image');img.src='assets/'+data.image;img.alt=data.alt;
+ if(!matchMedia('(prefers-reduced-motion: reduce)').matches)img.animate([{opacity:.2,transform:'translateY(15px) rotate(3deg)'},{opacity:1,transform:'translateY(0) rotate(0)'}],{duration:450,easing:'ease-out'});
+ byId('signature-description').textContent=data.description;
+ const link=byId('signature-menu-link');link.dataset.menuJump=data.category;link.textContent=data.link+' ↗';
+}));
